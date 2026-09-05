@@ -1,26 +1,33 @@
-import '../css/Favourite.css'
 import { useMovieContext } from '../contexts/movieContex'
-import MovieCard from '../components/MovieCrad'
+import MovieGrid from '../components/MovieGrid'
+import MovieCard from '../components/MovieCard'
+import EmptyState from '../components/EmptyState'
+import '../css/Favourite.css'
 
 export default function Favourite() {
-    const { favourites } = useMovieContext();
+    const { favourites } = useMovieContext()
 
-    if (favourites) {
+    if (favourites.length === 0) {
         return (
             <div className='favourites'>
-                <h2 className='title'>Your Favourite List</h2>
-                <div className="movies-grid">
-                    {favourites.map((movie) => (
-                        // movie.title.toLowerCase().startsWith(search.toLowerCase()) &&
-                        <MovieCard key={movie.id} movie={movie} />
-                    ))}
-                </div>
+                <h2 className='favourites-title'>Your Favourite List</h2>
+                <EmptyState
+                    icon="❤️"
+                    title="No favourites yet"
+                    message="Start adding movies to your favourites and they will appear here."
+                />
             </div>
         )
     }
 
-    return <div className="fav-empty">
-        <h2>No Favourite movie Yet</h2>
-        <p> Start adding Movies to your favourites and will appear here </p>
-    </div>
+    return (
+        <div className='favourites'>
+            <h2 className='favourites-title'>Your Favourite List</h2>
+            <MovieGrid>
+                {favourites.map((movie) => (
+                    <MovieCard key={movie.id} movie={movie} />
+                ))}
+            </MovieGrid>
+        </div>
+    )
 }
