@@ -18,9 +18,9 @@ Movie World is a simple and responsive movie discovery application built with Re
 ## 📸 Preview
 
 ### Demo URL:
-`
+```
 movie-world-umber.vercel.app
-`
+```
 
 > [!IMPORTANT]
 > **Demo Note:** If you are checking the live demo, please use a VPN, as the Movie API is currently not working in some regions. This issue occurred after the project was completed and is related to the API, not the project itself.
