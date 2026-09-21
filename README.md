@@ -3,19 +3,19 @@
 Movie World is a simple and responsive movie discovery application built with React. It allows users to browse and search for movies using an external movie API and save their favorite movies for quick access.
 
 ---
-
-## ✨ Features
-
-- 🎥 Browse popular movies
-- 🔍 Search movies by name
-- ❤️ Add movies to favorites
-- 📄 View saved favorite movies
-- 🗑️ Remove movies from favorites
-- 🔄 Fetch movie data using an external API
-- 📱 Simple and responsive user interface
-
----
 ## 📸 Preview
+
+### Home Page:
+
+<img width="1405" height="904" alt="image" src="https://github.com/user-attachments/assets/19a821e2-5016-4d42-bd89-3c4d8dc15457" />
+
+### Movie Info. Page:
+
+<img width="1326" height="910" alt="image" src="https://github.com/user-attachments/assets/3b486451-ce8d-48b7-8cad-8802186c9817" />
+
+### Favourites:
+
+<img width="1283" height="907" alt="image" src="https://github.com/user-attachments/assets/9d1ef2e7-e111-4d7a-92af-3163fe75d45c" />
 
 ### Demo URL:
 ```
@@ -27,18 +27,18 @@ movie-world-umber.vercel.app
 >
 > The project is a small movie-search application built as a learning project.
 
-### Home Page:
 
-<img width="1405" height="904" alt="image" src="https://github.com/user-attachments/assets/19a821e2-5016-4d42-bd89-3c4d8dc15457" />
+---
 
-### Movie Info. Page:
+## ✨ Features
 
-<img width="1326" height="910" alt="image" src="https://github.com/user-attachments/assets/3b486451-ce8d-48b7-8cad-8802186c9817" />
-
-## Favourites
-
-<img width="1283" height="907" alt="image" src="https://github.com/user-attachments/assets/9d1ef2e7-e111-4d7a-92af-3163fe75d45c" />
-
+- 🎥 Browse popular movies
+- 🔍 Search movies by name
+- ❤️ Add movies to favorites
+- 📄 View saved favorite movies
+- 🗑️ Remove movies from favorites
+- 🔄 Fetch movie data using an external API
+- 📱 Simple and responsive user interface
 
 ---
 
